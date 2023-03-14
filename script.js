@@ -9,3 +9,11 @@ toggleButtons.forEach(button => {
     nav.classList.toggle('active');
   });
 });
+
+const navLinks = nav.querySelectorAll('a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+  })
+})
