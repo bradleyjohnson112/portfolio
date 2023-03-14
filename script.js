@@ -1,9 +1,11 @@
 'use strict';
 
-const toggleButton = document.querySelector('.toggle-button');
-const nav = document.querySelector('.nav');
+const toggleButtons = document.querySelectorAll('.toggle-button');
+const nav = document.querySelector('.nav-mobile');
 
-toggleButton.addEventListener('click', () => {
-  console.log('hi');
-  nav.classList.toggle('active');
-})
+
+toggleButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});

@@ -4,53 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/e0aae40eec.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6526311451.js" crossorigin="anonymous"></script>
   <title>Bradley Johnson - Front End Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="nav-mobile">
+    <i class="fa-solid fa-bars toggle-button"></i>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/bradleyjohnson212/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+  </nav>
+
   <header>
     <div class="headerWrapper">
       <h1 class="logo">
         <a href="/">Bradley Johnson</a>
       </h1>
       <i class="fa-solid fa-bars toggle-button"></i>
-      <div class="nav">
+      <nav class="nav-desktop">
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
         <a href="https://www.linkedin.com/in/bradleyjohnson212/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
+      </nav>
     </div>
   </header>
+
   <section id="hero" class="hero">
     <div class="heroWrapper">
-      <section class="intro">
+      <div class="intro">
         <p>Hello there I'm</p>
         <h1>Bradley<br>Johnson</h1>
-        <p>Web Developer</p>
-        <p>I'm a passionate developer with front and<br> back end skills based in London.</p>
+        <p>Front End Developer</p>
         <div class="introLinks">
           <a href="#skills">View my skills</a>
           <a href="#portfolio">See my work</a>
         </div>
-      </section>
-      <section class="heroImg">
+      </div>
+      <div class="heroImg">
         <img src="./images/hero.svg" alt="" width="100%" height="100%">
-      </section>
+      </d>
     </div>
   </section>
+
   <section id="about" class="about">
     <div class="aboutWrapper">
-      <section class="aboutImg">
-        <img src="./images/profile.jpg" alt="profile">
-      </section>
-      <section class="aboutText">
+      <div class="aboutImg">
+        <img src="./images/profile.jpg" alt="profile" width="100%">
+      </div>
+      <div class="aboutText">
         <div class="aboutHeader">
           <div class="aboutHeaderTop">
             <span>Who I am</span>
@@ -59,14 +70,16 @@
           <h3>About me</h3>
         </div>
         <div class="aboutInnerText">
-          <p>I'm Bradley Johnson, a passionate developer with front and back end skills. I take a language agnostic approach to coding and try to use & learn whatever language, framework or tool is good for the job!</p>
-        <p>I have experience using HTML, CSS and Javascript on the front end to design websites and web apps (like this site for example). I also have experience using C# on the back end to build Web API's.</p>
-        <p>I am a self driven and result oriented person, I always strive to get the best results possible while sticking to the required deadline.</p>
+          <p>I'm Bradley Johnson, a 25 year old front end developer focused on creating experiences for the web. After self studying for the better part of 2 years I am now looking to make the first leap into a career in front end development!</p>
+        <p>I have experience using HTML, CSS, Javascript and React to create websites and web apps. I also have a familiarity with Node.js and Express. Using them to build web API's and web servers for my apps.</p>
+        <p>Outside of coding I have many other interests including watching TV shows, reading manga or philosophy and gaming (okay actually not that many).</p>
+        <p>My goals for the future are to become a professional developer, see more of the world and learn to enjoy things more as I'm a chronic overthinker haha!</p>
         </div>
         <a href="./cv.docx" download>Download CV</a>
-      </section>
+      </div>
     </div>
   </section>
+
   <section id="skills" class="skills">
     <div class="skillsWrapper">
       <div class="wrapperHeader">
@@ -81,40 +94,54 @@
       <section class="skillCardsWrapper">
         <div class="skillCard">
           <div class="cardContent">
-            <div class="cardIcon">
+            <div class="cardIcon html5">
             <i class="fa-brands fa-html5"></i>
             </div>
             <h5>HTML & CSS</h5>
-            <p>Using HTML & CSS I can build simple responsive web layouts that look good on all devices.</p>
+            <ul>
+              <li>Semantic HTML</li>
+              <li>Responsive design</li>
+              <li>BEM</li>
+            </ul>
           </div>
         </div>
         <div class="skillCard">
           <div class="cardContent">
-            <div class="cardIcon">
+            <div class="cardIcon js">
               <i class="fa-brands fa-square-js"></i>
             </div>
             <h5>JavaScript</h5>
-            <p>I have used Javascript to add functionality to my websites and web apps.</p>
+            <ul>
+              <li>ES6 syntax</li>
+              <li>OOP</li>
+              <li>Asynchronous JavaScript</li>
+              <li>web APIs (DOM, fetch)</li>
+            </ul>
           </div>
         </div>
         <div class="skillCard">
           <div class="cardContent">
-            <div class="cardIcon">
-              <i class="fa-brands fa-microsoft"></i>
+            <div class="cardIcon react">
+              <i class="fa-brands fa-react"></i>
             </div>
-            <h5>C#</h5>
-            <p>Using C# I can build web API's that do CRUD operations on a database with entity framework. I can also create desktop apps with WPF!</p>
+            <h5>React</h5>
+            <ul>
+              <li>Functional components</li>
+              <li>React hooks</li>
+              <li>React router</li>
+            </ul>
           </div>
         </div>
       </section>
     </div>
   </section>
+
   <section id="portfolio" class="portfolio">
     <div class="portfolioWrapper">
       <div class="wrapperHeader">
         <div class="inner">
           <div>
-            <span>Some projects I've done</span>
+            <span>Some of my projects</span>
             <span></span>
           </div>
           <h3>My Portfolio</h3>
@@ -122,22 +149,39 @@
       </div>
       <div class="projectsWrapper">
         <div class="project">
-          <h4>To Do List</h4>
-          <p>A simple to do list with features to add items, clear selected items, delete items and save the list to the browsers local storage.</p>
+          <h2>Watchr</h2>
+          <p>A React web app for keeping track of your favourite shows. It utilises the <a href="https://www.tvmaze.com/api" target="_blank">TVmaze API</a> for the show data and local storage to store user data.</p>
           <div class="projectSkills">
             <span>Skills used</span>
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="projectLinks">
+            <a href="https://watchr-app.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/bradleyjohnson112/watchr-react" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h2>Basic Business Website</h2>
+          <p>A mobile first website for a business that follows BEM methodology.</p>
+          <div class="projectSkills">
+            <span>Skills used</span>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3"></i>
             <i class="fa-brands fa-square-js"></i>
           </div>
           <div class="projectLinks">
-            <a href="https://list-mytodo.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a href="https://github.com/bradleyjohnson112/todo-web-app" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://watchr-app.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/bradleyjohnson112/watchr-react" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section id="contact" class="contact">
     <div class="contactWrapper">
       <div class="wrapperHeader">
@@ -157,14 +201,14 @@
           </div>
           <div class="contactInfo">
             <i class="fa-solid fa-envelope"></i>
-            <p>bradleyworkacc@outlook.com</p>
+            <p>bradleyjohnson1898@gmail.com</p>
           </div>
           <div class="contactInfo">
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
         <div class="contactForm">
-          <form action="mailto:bradleyworkacc@outlook.com" method="POST" name="contact">
+          <form action="mailto:bradleyjohnson1898@gmail.com" method="POST" name="contact">
             <input type="text" placeholder="Full Name" name="name" required>
             <div>
               <input type="email" placeholder="Email" name="email" required>
